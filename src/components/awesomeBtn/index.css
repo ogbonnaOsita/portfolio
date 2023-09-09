@@ -1,0 +1,41 @@
+.awesome-btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  /* background-color: #363636; */
+  /* color: #fff; */
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.awesome-btn:hover {
+  color: #333;
+}
+
+.awesome-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.awesome-btn:before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.awesome-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+span {
+  display: inline-block;
+}
