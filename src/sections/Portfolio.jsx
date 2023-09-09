@@ -1,4 +1,6 @@
 import PortfolioCard from "../components/PortfolioCard";
+import website1 from "../assets/website1.png";
+import website2 from "../assets/website2.png";
 
 const Portfolio = () => {
   return (
@@ -23,7 +25,7 @@ const Portfolio = () => {
             rel="noreferrer"
           >
             <PortfolioCard
-              image="/website1.png"
+              image={website1}
               title="Ultino Resources Ltd"
               caption="Website"
             />
@@ -34,7 +36,7 @@ const Portfolio = () => {
             rel="noreferrer"
           >
             <PortfolioCard
-              image="/website2.png"
+              image={website2}
               title="Shooly Brandt"
               caption="Website"
             />

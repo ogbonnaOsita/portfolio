@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // import React from "react";
 import CircularProgress from "../../components/circularProgress/CircularProgress";
+import photo from "../../assets/man.jpeg";
 import "./index.css";
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
         <div className="flex md:flex-row flex-col items-center gap-8">
           <div className="image-box p-3 md:w-2/6 before:bg-primary dark:before:bg-darkPrimary">
             <img
-              src="/man.jpeg"
+              src={photo}
               alt=""
               className="w-[100%] h-[100%] object-cover object-top  rounded-md "
             />
